@@ -1,0 +1,110 @@
+body{
+    background-image: url("../img/paisaje-digital-en-atardecer-5846.jpg");
+    background-color: grey;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 10vh;
+    font-family: Arial, sans-serif;
+    color: white;    
+    background-color: #f0f2f5;
+        }
+ 
+        .calendar-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 100%;
+            max-width: 380px;
+        }
+ 
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: #ffffff;
+        }
+ 
+        .calendar-header h2 {
+            margin: 0;
+            font-size: 1.4em;
+            font-weight: 500;
+        }
+ 
+        .calendar-header button {
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 1.8em;
+            cursor: pointer;
+            padding: 0 10px;
+            transition: transform 0.2s;
+        }
+        
+        .calendar-header button:hover {
+            transform: scale(1.1);
+        }
+ 
+        .calendar-body {
+            padding: 20px;
+        }
+ 
+        .weekdays {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            text-align: center;
+            font-weight: 600;
+            color: #999;
+            margin-bottom: 10px;
+        }
+ 
+        .weekdays div {
+            padding: 5px;
+        }
+ 
+        .days {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+            text-align: center;
+        }
+ 
+        .days div {
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+ 
+        .days div:not(.prev-date, .next-date):hover {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+        
+        .days div.today {
+            background-color: #28a745;
+            color: #ffffff;
+            font-weight: bold;
+        }
+ 
+        .days div.prev-date,
+        .days div.next-date {
+            color: #ccc;
+        }
+.chart-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+}
+ 
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+ 
