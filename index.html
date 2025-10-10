@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>pagina principal</title>
+    <link rel="stylesheet" type="text/css" href="/frontend/css/formurario.css">
+    <script type="text/javascript" src="source/js/jquery.js"></script>
+  </head>
+  <body>
+    <div id="contenedor">
+      <!-- <img src="source/img/icono.jpeg" alt="b" id="logo"> -->
+      <h1>Iniciar Sesion</h1>
+      <input
+        type="text"
+        name="correo"
+        id="correo"
+        placeholder="correo"
+        class="input"
+        onkeyup="comprobarCorreo(event);"
+      />
+      <br />
+      <input
+        type="password"
+        name="contrasena"
+        id="contrasena"
+        placeholder="contrasena"
+        class="input"
+        onkeyup="comprobarContra(event);"
+      />
+      <br />
+      <button type="submit" id="enviar" class="boton" onclick="inciarSesion();">
+        Aceptar
+      </button>
+      <br />
+      <p id="error_de_Comprobacion">Comprueba la contaseña o la cuenta</p>
+      <a href="#" class="enlace">Se te olvido la contraseña</a>
+      <p><a href="/frontend/pagues/nose.html"class="enlace">Redirección</a></p>
+    </div>
+    
+    <script type="text/javascript" src="/frontend/js/lienzo.js"></script>
+  </body>
+</html>
